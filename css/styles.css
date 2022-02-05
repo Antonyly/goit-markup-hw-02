@@ -10,7 +10,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
-  background-color: var(--secondary-text-color-light);
+  background-color: #e5e5e5;
 }
 .list {
   list-style: none;
@@ -38,6 +38,9 @@ body {
 /* ========= End Components ========= */
 
 /* ========= Start Header ========= */
+.header {
+  background-color: var(--secondary-text-color-light);
+}
 .nav-list-link {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -99,7 +102,14 @@ body {
 }
 /* ========= End Hero ========= */
 
+.qualities {
+  background-color: var(--secondary-text-color-light);
+}
+
 /* ========= Start Obligation  ========= */
+.obligation-section {
+  background-color: var(--secondary-text-color-light);
+}
 .team-section {
   background-color: #f5f4fa;
 }
