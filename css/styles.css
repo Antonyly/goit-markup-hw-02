@@ -219,7 +219,11 @@ body {
 
 /* ========= End Footer ========= */
 
-/* ========= Prtfolio Html ========= */
+/* ========= Portfolio Html ========= */
+
+.main-section {
+  background-color: var(--secondary-text-color-light);
+}
 
 /* ========= Start Work ========= */
 .portfolio-btn {
