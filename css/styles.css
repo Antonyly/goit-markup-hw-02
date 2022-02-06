@@ -51,6 +51,9 @@ body {
 .nav-list-link:focus {
   color: var(--accent-color);
 }
+.current {
+  color: var(--accent-color);
+}
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -63,6 +66,7 @@ body {
 .contact-link:focus {
   color: var(--accent-color);
 }
+
 /* ========= End Header ========= */
 
 /* ========= Start Hero ========= */
