@@ -10,12 +10,32 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+
 /* ========= Start Components ========= */
 
 .logo {
@@ -34,11 +54,48 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ========= End Components ========= */
 
 /* ========= Start Header ========= */
 .header {
+  border: 1px solid #ececec;
+}
+.header-container {
   background-color: var(--secondary-text-color-light);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 32px 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  margin-left: 93px;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.nav-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-list-link {
   font-weight: 500;
@@ -54,6 +111,20 @@ body {
 .current {
   color: var(--accent-color);
 }
+.main-conacts {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.contact-number {
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-mail {
+  margin-left: 50px;
+}
+
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -72,8 +143,17 @@ body {
 /* ========= Start Hero ========= */
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -83,6 +163,8 @@ body {
   color: var(--secondary-text-color-light);
 }
 .hero-btn {
+  min-height: 40px;
+  padding: 6px 18px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -90,6 +172,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 
   color: var(--secondary-text-color-light);
@@ -102,11 +187,45 @@ body {
 /* ========= End Hero ========= */
 
 /* ========= Start Obligation  ========= */
+.obligation {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-dark);
+}
+.obligation-list {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 94px;
+}
+.obligation-list-item:not(:first-child) {
+  margin-left: 30px;
+}
+.caption {
+  display: flex;
+  justify-content: center;
+}
 
-.team-section {
-  background-color: #f5f4fa;
+.caption-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.caption-list-item {
+  flex-basis: calc((100%-120) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.caption-list-item {
 }
 .caption-subtitle {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -115,25 +234,33 @@ body {
   color: var(--primary-text-color-dark);
 }
 .caption-text {
+  /* margin-bottom: 94px; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-light);
 }
-.obligation {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color-dark);
-}
 
 /* ========= End Obligation ========= */
 
 /* ========= Start Team ========= */
+.team-section {
+  background-color: #f5f4fa;
+}
+.subtitle-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.subtitle-list-item {
+  flex-basis: calc((100%-120) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .subtitle {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -141,11 +268,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color-dark);
 }
+/* .subtitle-photo {
+  margin-bottom: 30px;
+} */
+.container-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
 .subtitle-text {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-dark);
 }
@@ -153,17 +289,23 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-light);
 }
 /* ========= End Team ========= */
 
 /* ========= Start Footer ========= */
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer {
   background-color: #2f303a;
 }
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -172,6 +314,8 @@ body {
   color: var(--secondary-text-color-light);
 }
 .logo-site-footer {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -179,6 +323,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
+.footer-list-item:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
 .footer-list-address {
   font-style: normal;
   font-weight: 400;
@@ -213,7 +364,26 @@ body {
 }
 
 /* ========= Start Work ========= */
+.title-portfolio {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-list-item:not(:first-child) {
+  margin-left: 8px;
+}
 .portfolio-btn {
+  min-height: 40px;
+  padding: 4px 12px;
+
+  border: 0;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -228,8 +398,26 @@ body {
 .portfolio-btn:focus {
   color: var(--secondary-text-color-light);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.main-list-item {
+  flex-basis: calc((100%-90) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.overtitle {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding: 20px 24px;
+}
 .main-list-title {
   font-weight: 700;
   font-size: 18px;
