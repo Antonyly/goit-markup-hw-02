@@ -7,11 +7,15 @@
     <title>Webstudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
                                 <!-- ========= Header ========= -->
      <header class="header">
+         <div class="container header-container">
         <a class="logo  link" href="./index.html"><span class="logo-site">Web</span>Studio</a>
          <nav class="navigation">
              <ul class="nav-list list">
@@ -24,28 +28,33 @@
              <li class="contact-number"><a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
              <li class="contact-mail"><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
          </ul>
-
+        </div>
      </header>
      <main>
-
+       
                                 <!-- ========= Hero ========= -->
 
      <section class="hero">
+        <div class="container hero-container">
          <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
          <button class="hero-btn" type="button">Заказать услугу</button>
-    </section>
+        </div>
+            </section>
+
 
                                 <!-- ========= Qualities ========= -->
 
-    <section class="qualities">
+    <section class="qualities ">
+
         <h2 class="caption">Наши Обезательности</h2>
+        <div class="section container">
         <ul class="caption-list list">
         <li class="caption-list-item">
         <h3 class="caption-subtitle">Внимание к деталям</h3>
         <p class="caption-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
 
-        <li class="caption-list-item">
+        <li class="caption-list-item"">
         <h3 class="caption-subtitle">Пунктуальность</h3>
         <p class="caption-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
@@ -61,11 +70,15 @@
         </li>
 
         </ul>
+        </div>
+
         </section>
 
                                 <!-- ========= Obligation ========= -->
 
         <section class="obligation-section">
+            
+            <div class="container">
     <h2 class="obligation">Чем мы занимаемся</h2>
 
 <ul  class="obligation-list list">
@@ -73,38 +86,53 @@
     <li class="obligation-list-item"><img src="./img/studio-2.jpg" class="obligation-photo" alt="синхронизирует телефон с пк" width="370"></li>
     <li class="obligation-list-item"><img src="./img/studio-3.jpg" class="obligation-photo" alt="выбирает цвет" width="370"></li>
 </ul>
-
+</div>
     </section>
 
                                 <!-- ========= Our Team ========= -->
 
     <section class="team-section">
-        <h2 class="subtitle">Наша команда</h2>
+        <div class="container section">
+        <h2 class="subtitle ">Наша команда</h2>
 <ul class="subtitle-list list">
     <li class="subtitle-list-item"><img src="./img/crew-1.jpg" alt="дизайнер" class="subtitle-photo" width="270">
+        <div class="container-title">
         <h3 class="subtitle-text">Игорь Демьяненко</h3>
+        
         <p class="subtitle-test-desk"  lang="en">Product Designer</p>
+    </div>
     </li>
 
     <li class="subtitle-list-item"><img src="./img/crew-2.jpg" alt="фронтенд" class="subtitle-photo" width="270">
+        <div class="container-title">
         <h3 class="subtitle-text">Ольга Репина</h3>
         <p class="subtitle-test-desk" lang="en">Frontend Developer</p>
+    </div>
     </li>
     <li class="subtitle-list-item"><img src="./img/crew-3.jpg" alt="маркетинг" class="subtitle-photo" width="270">
+        <div class="container-title">
         <h3 class="subtitle-text">Николай Тарасов</h3>
         <p class="subtitle-test-desk" lang="en">Marketing</p>
+    <div>
+    </li>
     </li>
     <li class="subtitle-list-item"><img src="./img/crew-4.jpg" alt="дизайнер интерфейса" class="subtitle-photo" width="270">
+        <div class="container-title">
         <h3 class="subtitle-text">Михаил Ермаков</h3>
         <p class="subtitle-test-desk" lang="en">UI Designer</p>
+    </div>
     </li>
 </ul>
+</div>
     </section>
+
+   
 
                                 <!-- ========= Footer ========= -->
 
     </main>
     <footer class="footer">
+        <div class="container footer-section">
         <a class="footer-logo link" href="./index.html"><span class="logo-site-footer">Web</span>Studio</a>
         <address class="footer-addresses">
             <ul class="footer-list list">
@@ -114,6 +142,7 @@
             </ul>
 
         </address>
+        </div>
     </footer>
 </body>
 </html>
